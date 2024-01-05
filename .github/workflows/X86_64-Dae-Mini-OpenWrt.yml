@@ -1,4 +1,4 @@
-name: X86_64 Mini OpenWrt
+name: X86_64 Mini OpenWrt Dae
 
 on:
 #  schedule:
@@ -10,8 +10,8 @@ on:
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
-  CONFIG_FILE: configs/x86_64-cus-mini.config
-  DIY_SCRIPT: diy-cus-mini.sh
+  CONFIG_FILE: configs/x86_64-dae-mini.config
+  DIY_SCRIPT: diy-dae-mini.sh
   CLASH_KERNEL: amd64
   CACHE_TOOLCHAIN: true
   UPLOAD_BIN_DIR: false
