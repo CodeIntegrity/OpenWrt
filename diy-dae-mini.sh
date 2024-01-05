@@ -26,10 +26,10 @@ ls -l ../../
 ln -sf ../../../feeds/packages/net/dae ./package/feeds/packages/dae
 cp -rf ./immortalwrt_pkg/net/daed ./feeds/packages/net/daed
 ln -sf ../../../feeds/packages/net/daed ./package/feeds/packages/daed
-git clone -b rebase --depth 1 https://github.com/QiuSimons/luci-app-daed-next lucidaednext
+git clone -b main --depth 1 https://github.com/sbwml/luci-app-daed-next.git lucidaednext
 cp -rf ./lucidaednext/daed-next ./package/daed-next
 cp -rf ./lucidaednext/luci-app-daed-next ./package/luci-app-daed-next
-git clone -b master --depth 1 https://github.com/QiuSimons/luci-app-daed package/luci-app-daed
+
 # btf
 wget -qO - https://github.com/immortalwrt/immortalwrt/commit/73e5679.patch | patch -p1
 wget https://github.com/immortalwrt/immortalwrt/raw/openwrt-23.05/target/linux/generic/backport-5.15/051-v5.18-bpf-Add-config-to-allow-loading-modules-with-BTF-mismatch.patch -O target/linux/generic/backport-5.15/051-v5.18-bpf-Add-config-to-allow-loading-modules-with-BTF-mismatc
